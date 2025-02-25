@@ -1,0 +1,303 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    /* inherit 부모, 조상값 상속 */
+  }
+
+  .wrap{
+    
+
+  }
+
+  .wrap .header{
+    width: 1280px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+    color: white;
+  
+  }
+
+ .wrap .header .inner{
+ }
+
+ .inner .gnb{
+    display: flex;
+    gap: 81px;
+    align-items: center;
+    height: 100%;
+ }
+
+ .main_logo{
+  
+ }
+
+.main_logo .logo img{
+    width: 114px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 0 auto;
+  
+}
+
+.title {
+  display: flex;
+  align-items: center;
+    
+ }
+
+
+.title .util{
+    display: flex;
+    gap:81px;
+    justify-items: space-between;
+    align-items: center;
+}   
+
+.main{
+
+}
+
+.main .main_visual{
+
+}
+
+.main .main_visual img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.main .main_visual .text{
+    width: 1280px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%)
+
+}
+
+.main .main_visual .text h1{
+    font-size: 28px;
+    
+}
+
+.main .main_visual .text h1{
+    font-size: 28px;
+    color: white;
+    
+}
+
+.main .main_visual .text p{
+    font-size: 14px;
+    margin-top: 32px;
+    color: white;
+}
+
+.button{
+    width: 200px;
+    padding:10px;
+    margin:30px;
+    border: 1px solid#ffffff;
+    border-radius: 30px;
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    margin-left: -532px;
+    margin-top: 120px;
+    color: white;
+    
+   
+    
+} 
+
+.button .span p{
+    font-size:14px;
+}
+ 
+.section-01 .submit{
+
+}
+
+.submit h2{
+    font-size: 40px;
+    margin-top: 120px;
+    text-align: center;
+    
+}
+
+.item{
+    width: 50%;
+    margin-left: 510px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.item .box {
+    margin-top: 120px;
+    width: 400px;
+    height: 600px;
+    border: 1px solid #333;
+    padding: 10px;
+    display: block;
+    border-radius: 30px;
+}
+
+
+.item .box:nth-child(even) {
+   position: relative;
+   top:50px;
+   margin-right: 80px;
+  
+}
+
+.item .box img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.item .item_wrap {
+   margin-top: 32px;
+}
+
+.item .item_wrap strong{
+    font-size: 24px;
+
+}
+
+.item .item_wrap p{
+    font-size: 16px;
+    margin-top: 8px;
+
+}
+
+.item .item_wrap div{
+    font-size: 16px;
+    margin-top: 24px;
+}
+
+.submit h2{
+      font-size: 50px;
+}
+
+.submit p{
+    font-size: 14px;
+    text-align: center;
+}
+
+.section-03{
+     margin-top: 120px;
+     position: relative;
+     
+
+}
+
+.flex_box{
+    width: 600px;
+    height: 500px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    margin-left: 150px;
+    position: absolute;
+    left: 20%;
+    border: 1px solid#333;
+    border-radius: 30px;
+ 
+}
+
+
+.section-03 .content .flex_box img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    position: absolute;
+    left: 64%;
+    justify-content: center;
+    margin-top: 80px;
+    border-radius: 30px;
+
+}
+
+.flex_box .text-01{
+    margin-left: -200px;
+}
+
+.section-03 .content .flex_box h1{
+         margin-top: 32px;
+      
+   
+}
+
+.section-03 .content .flex_box p{
+             font-size: 16px;
+             margin-top: 8px;
+             
+             
+}
+
+.button-01{
+    margin: 32px;
+    padding: 0;
+    margin-left: -28px;
+    margin-top: 120px;
+}
+
+
+.section-03{
+    height: 580px;
+}
+    
+.content{
+    height: 580px;
+}
+
+.card p{
+    width: 200px;
+    border-radius: 30px;
+    border: 1px solid#333;
+    margin: 32px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
