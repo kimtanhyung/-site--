@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+
+
 *{
     margin: 0;
     padding: 0;
@@ -13,6 +15,10 @@ a {
     text-decoration: none;
     color: inherit;
     /* inherit 부모, 조상값 상속 */
+  }
+
+  body{
+    min-width: 1920px;
   }
 
   .wrap{
@@ -272,10 +278,7 @@ a {
 
 .section-03{
     height: 580px;
-}
     
-.content{
-    height: 580px;
 }
 
 .card p{
@@ -287,6 +290,9 @@ a {
     text-align: center;
 }
 
+.section-03 {
+    height: 1000px;
+}
 
 
 
