@@ -32,3 +32,7 @@
 ### 체크리스트
 - [ ] 체크리스트 1
 - [x] 체크리스트 2
+
+### 이미지 넣기
+![Image](https://github.com/user-attachments/assets/534f6a6f-a63a-40ed-824b-7222f6104c9c)
+<img src="![Image](https://github.com/user-attachments/assets/534f6a6f-a63a-40ed-824b-7222f6104c9c)" style="width: 500px"/>
