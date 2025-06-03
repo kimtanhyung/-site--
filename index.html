@@ -7,12 +7,31 @@
     <title>코카콜라 홈페이지</title>
 
     <link rel="stylesheet" href="css.01.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         window.onload = () => {
             AOS.init();
+            var swiper = new Swiper(".visualSwiper", {
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
         }
     </script>
 </head>
@@ -29,7 +48,9 @@
 
                 <h1 class="main_logo">
                     <div class="logo">
-                        <img src="img/main/로고.png" alt="logo">
+                        <a href="#">
+                            <img src="img/main/로고.png" alt="logo">
+                        </a>
                 </h1><!-- .logo end -->
             </div><!-- .main_logo end -->
 
@@ -45,21 +66,72 @@
 
     <main class="main">
         <section class="main_visual">
-            <img src="img/main/main-01.jpg" alt="coca cola">
-            <div class="text">
-                <h1>나의 미식 파트너 코카콜라</h1>
-                <p>
-                    오늘을 즐기기 위해 필요한건 ?<br />
-                    맛있는 음식, 그리고 어떤 <br />
-                    제대로 살려주는 코카콜라!
-                </p>
-            </div><!-- .title -->
+            <div class="swiper visualSwiper">
+                <div class="swiper-wrapper">
 
-            <div class="button">
-                <div class="span">
-                    <p><a href="#">coke & meal 알아보기</a></p>
-                </div><!-- sapn -->
-            </div><!-- .button -->
+                    <div class="swiper-slide">
+                        <div class="image">
+                            <img src="img/main/mahbod-akhzami-VM6uuMFPIGM-unsplash.jpg" alt="코카콜라">
+                        </div><!-- .image end -->
+                        <div class="text">
+                            <h1>나의 미식 파트너 코카콜라</h1>
+                            <p>
+                                오늘을 즐기기 위해 필요한건 ?<br />
+                                맛있는 음식, 그리고 어떤 <br />
+                                제대로 살려주는 코카콜라!
+                            </p>
+                        </div><!-- .title -->
+
+                        <div class="button">
+                            <div class="span">
+                                <p><a href="#">coke & meal 알아보기</a></p>
+                            </div><!-- sapn -->
+                        </div><!-- .button -->
+                    </div><!-- .swiper-slide end -->
+
+                    <div class="swiper-slide">
+                        <div class="image">
+                            <img src="img/main/coca-cola-6090176_1920.jpg" alt="코카콜라">
+                        </div><!-- .image end -->
+                        <div class="text">
+                            <h1>나의 미식 파트너 코카콜라</h1>
+                            <p>
+                                오늘을 즐기기 위해 필요한건 ?<br />
+                                맛있는 음식, 그리고 어떤 <br />
+                                제대로 살려주는 코카콜라!
+                            </p>
+                        </div><!-- .title -->
+
+                        <div class="button">
+                            <div class="span">
+                                <p><a href="#">coke & meal 알아보기</a></p>
+                            </div><!-- sapn -->
+                        </div><!-- .button -->
+                    </div><!-- .swiper-slide end -->
+
+                    <div class="swiper-slide">
+                        <div class="image">
+                            <img src="img/main/ai-generated-8559974_1280 (1).jpg" alt="코카콜라">
+                        </div><!-- .image end -->
+                        <div class="text">
+                            <h1>나의 미식 파트너 코카콜라</h1>
+                            <p>
+                                오늘을 즐기기 위해 필요한건 ?<br />
+                                맛있는 음식, 그리고 어떤 <br />
+                                제대로 살려주는 코카콜라!
+                            </p>
+                        </div><!-- .title -->
+
+                        <div class="button">
+                            <div class="span">
+                                <p><a href="#">coke & meal 알아보기</a></p>
+                            </div><!-- sapn -->
+                        </div><!-- .button -->
+                    </div><!-- .swiper-slide end -->
+
+                </div><!-- .swiper-wrapper end -->
+
+            </div><!-- .swiper visualSwiper -->
 
         </section><!-- .main_visual -->
     </main><!-- .main end -->
@@ -73,7 +145,7 @@
     <section class="item">
         <content class="box" data-aos="fade-up" data-aos-anchor-placement="top-center">
             <a href="">
-                <img src="img/section-01/코카콜라 슬로건.jpg" alt="콜라">
+                <img src="img/section-01/코카콜라슬로건.jpg" alt="콜라">
                 <div class="item_wrap">
                     <strong>코카콜라 슬로건의 변천사</strong>
                     <p>카피 한 줄로 소비자들의 마음을 사로잡은
@@ -90,7 +162,7 @@
 
         <content class="box" data-aos="fade-up" data-aos-anchor-placement="top-center">
             <a href="">
-                <img src="img/section-01/코카콜라의 상징.webp" alt="콜라">
+                <img src="img/section-01/코카콜라의상징.webp" alt="콜라">
                 <div class="item_wrap">
                     <strong>빨간색은 어떻게 코카-콜라를 상징</strong>
                     <p>
@@ -127,7 +199,7 @@
 
         <content class="box-01" data-aos="fade-up" data-aos-anchor-placement="top-center">
             <a href="">
-                <img src="img/section-01/코카콜라 마케팅.jpg" alt="콜라">
+                <img src="img/section-01/코카콜라마케팅.jpg" alt="콜라">
                 <div class="item_section">
                     <strong>코카-콜라의 기발한 마케팅 전략들</strong>
                     <p> 1890년대 초 코카-콜라를 인수한 아사 캔들러는<br />
@@ -207,7 +279,7 @@
             </div><!-- .flex_box end -->
             <div class="image_box">
                 <div class="img">
-                    <img src="img/section-02/콜라 이미지.jpg" alt="">
+                    <img src="img/section-02/콜라이미지.jpg" alt="">
                     </a>
                 </div><!-- .img end -->
             </div><!-- .image_box -->
@@ -258,91 +330,87 @@
         <div class="content_box">
             <div class="image_box-01">
                 <a href="">
-                <img src="img/section-03/section2-03.jpg" alt="콜라">
-                <div class="content-01">
-                    <div class="boutton-03">
-                        <p>브랜드 story</p>
-                    </a>
-                    </div><!-- .button-03 end -->
-        
-                </div><!-- .content-01 end -->
-            </div><!-- .image_box end -->
+                    <img src="img/section-03/section2-03.jpg" alt="콜라">
+                    <div class="content-01">
+                        <div class="boutton-03">
+                            <p>브랜드 story</p>
+                </a>
+            </div><!-- .button-03 end -->
 
-            <div class="image_box-01">
-                <a href="">
-                <img src="img/section-03/section-03.jpg" alt="콜라">
-                <div class="content-01">
-                    <div class="boutton-03">
-                        <p>영상</p>
-                    </a>
-                    </div><!-- .button-03 end -->
-        
-                </div><!-- .content-01 end -->
-            </div><!-- .image_box end -->
-            <div class="image_box-01">
-                <a href="">
-                <img src="img/main/사진.png" alt="콜라">
-                <div class="content-01">
-                    <div class="boutton-03">
-                        <p>로고</p>
-                    </a>
-                    </div><!-- .button-03 end -->
-        
-                </div><!-- .content-01 end -->
-            </div><!-- .image_box end -->
-            <div class="image_box-01">
-                <a href="">
-                <img src="img/section-03/소프트라이트.jpg" alt="콜라">
-                <div class="content-01">
-                    <div class="boutton-03">
-                        <p>제품소개</p>
-                    </a>
-                    </div><!-- .button-03 end -->
-        
-                </div><!-- .content-01 end -->
-            </div><!-- .image_box end -->
-            <div class="image_box-01">
-                <a href="">
-                <img src="img/section-03/코카콜라.jpg" alt="콜라">
-                <div class="content-01">
-                    <div class="boutton-03">
-                        <p>이벤트</p>
-                    </a>
-                    </div><!-- .button-03 end -->
-        
-                </div><!-- .content-01 end -->
-            </div><!-- .image_box end -->
+        </div><!-- .content-01 end -->
+    </div><!-- .image_box end -->
 
-        </div><!-- .content_box end -->
+    <div class="image_box-01">
+        <a href="">
+            <img src="img/section-03/section-03.jpg" alt="콜라">
+            <div class="content-01">
+                <div class="boutton-03">
+                    <p>영상</p>
+        </a>
+    </div><!-- .button-03 end -->
+
+    </div><!-- .content-01 end -->
+    </div><!-- .image_box end -->
+    <div class="image_box-01">
+        <a href="">
+            <img src="img/main/사진.png" alt="콜라">
+            <div class="content-01">
+                <div class="boutton-03">
+                    <p>로고</p>
+        </a>
+    </div><!-- .button-03 end -->
+
+    </div><!-- .content-01 end -->
+    </div><!-- .image_box end -->
+    <div class="image_box-01">
+        <a href="">
+            <img src="img/section-03/소프트라이트.jpg" alt="콜라">
+            <div class="content-01">
+                <div class="boutton-03">
+                    <p>제품소개</p>
+        </a>
+    </div><!-- .button-03 end -->
+
+    </div><!-- .content-01 end -->
+    </div><!-- .image_box end -->
+    <div class="image_box-01">
+        <a href="">
+            <img src="img/section-03/코카콜라.jpg" alt="콜라">
+            <div class="content-01">
+                <div class="boutton-03">
+                    <p>이벤트</p>
+        </a>
+    </div><!-- .button-03 end -->
+
+    </div><!-- .content-01 end -->
+    </div><!-- .image_box end -->
+
+    </div><!-- .content_box end -->
 
     </div><!-- .section-05 end -->
-
-    
-
-    
-
-  
 
     <section class="footer">
         <div class="section-06">
             <div class="wrap_item">
-                <img src="img/main/로고.png" alt="">
+                <a href="#">
+                    <img src="img/main/로고.png" alt="로고">
+                </a>
                 <div class="min">
                     <ul>
-                        <li>기업소개</li>
-                        <li>사이트 맵</li>
-                        <li>이용약관</li>
-                        <li>고객판매</li>
-                        <li>쿠키정책</li>
-                        <li>쿠키설정</li>
-                        <li>채용</li>
+                        <li><a href="#">기업소개</a></li>
+                        <li><a href="#">사이트 맵</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">고객판매</a></li>
+                        <li><a href="#">쿠키정책</a></li>
+                        <li><a href="#">쿠키설정</a></li>
+                        <li><a href="#">채용</a></li>
                     </ul>
                 </div><!-- .min end -->
             </div><!-- .Wrap_item end -->
-            
+
             <div class="copy">
                 <div class="id">
-                    <span>©2025년 The coca-cola company,판권 소유</span>
+                    <span><a href="#">©2025년 The coca-cola company,판권 소유</a></span>
                 </div><!-- .id end -->
 
             </div><!-- .copy end -->
