@@ -7,21 +7,29 @@
 링크 - https://kimtanhyung.github.io/cocolasite/
 ---
 
-###리스트 작성
-1. 네비게이션
-2. 메인비주얼
-3. 섹션
-
-
+###파일 구조 및 구성
+1. [ ]역할별 파일 구분(/js, /css, /img)
+2. main과 section 중복되는 코드 분리
 
 내용 추가 작성하기
 
 ###코드 작성
 
-- `<header>`
-```html
-  <p>내용 작성중</p>
-  <div class="box">리드미파일 작성중</div>
+- ` <div class="wrap">
+        <div class="header">
+```  <main class="main">
+        <section class="main_visual">
+     <section class="secotn-01">
+     </section>
+
+      <section class="secotn-02">
+     </section-02>
+     </main>
+ </div>`
+     
+  [ ]title h1 가장먼저 사용하고 레이아웃 구조 순서에 맞게 작성
+  [x]의미론적 태그를 적절히 사용이 부족함(<articl>, <section>, <header>, <main>, <nav>)
+  
 ```
     반응형웹 사이트
     기술 작성할거고, 프로그램도 작성할거고...❤
@@ -41,7 +49,7 @@ CSS
 JS
 Vanila JS 100% ( Jquery 100% - 주석처리 )
 
-그누보드 게시판
+
 🔎 웹표준 / 접근성
 The W3C Markup Validation Service 검사 완료
 크로스 브라우징(크롬, 사파리, 엣지, 파이어폭스, 오페라) 테스트 완료
